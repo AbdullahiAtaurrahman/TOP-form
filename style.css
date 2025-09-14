@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(./assests/Norse-Bold.otf);
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.section-1 {
+  flex: 3;
+  height: 100%;
+  background-image: url(./assests/halie-west-25xggax4bSA-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.logo-container {
+  width: 100%;
+  padding: 1rem;
+  opacity: 0.8;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45%;
+}
+.logo {
+  height: 100px;
+  width: auto;
+}
+.logo-container span {
+  font-size: 48px;
+  color: #fff;
+  font-family: "Norse Bold";
+}
+.copyright {
+  color: #fff;
+  position: absolute;
+  bottom: 12px;
+}
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-2 {
+  height: 100%;
+
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", "sans-serif";
+}
+
+.top-section {
+  flex: 1;
+  padding-top: 3rem;
+  background-color: rgb(237, 236, 236);
+  padding-left: 20px;
+}
+
+.top-section > div {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  flex: 1;
+  padding-left: 20px;
+}
+
+fieldset {
+  font-weight: bolder;
+  border: none;
+}
+
+fieldset > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-section {
+  flex: 1;
+  background-color: rgb(237, 236, 236);
+  padding-left: 20px;
+}
